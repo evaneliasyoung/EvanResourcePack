@@ -13,7 +13,7 @@ My Minecraft resource pack, with a generator.
 ## Simple Packs
 These include only language files.
 
-| -Pack-      | -Notes-                                                 |
+| Pack        | Notes                                                   |
 | ----------- | ------------------------------------------------------- |
 | Alpaca      | Changes llamas to alpaca                                |
 | Cranberries | Changes sweetberries to cranberries                     |
@@ -28,7 +28,7 @@ These include only language files.
 ## Complex Packs
 These can include any other file in a resource pack.
 
-| -Pack-   | -Notes-                     |
+| Pack     | Notes                       |
 | -------- | --------------------------- |
 | Grapes   | Changes carrots to grapes   |
 | Ruby     | Changes emerald to ruby     |
