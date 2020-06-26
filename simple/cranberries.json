@@ -1,0 +1,12 @@
+{
+  "name": "Sweetberries to Cranberries",
+  "code": "cranberry",
+  "version": "1.1",
+  "data": {
+    "item.minecraft.sweet_berries": "Cranberries",
+    "death.attack.sweetBerryBush": "%1$s was poked to death by a cranberry bush",
+    "death.attack.sweetBerryBush.player": "%1$s was poked to death by a cranberry bush whilst trying to escape %2$s",
+    "subtitles.item.berries.pick": "Crabnerries pop",
+    "block.minecraft.sweet_berry_bush": "Cranberry Bush"
+  }
+}

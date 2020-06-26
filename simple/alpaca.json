@@ -1,0 +1,21 @@
+{
+  "name": "Llamas to Alpacas",
+  "code": "alpaca",
+  "version": "1.0",
+  "data": {
+    "item.minecraft.llama_spawn_egg": "Alpaca Spawn Egg",
+    "item.minecraft.trader_llama_spawn_egg": "Trader Alpaca Spawn Egg",
+    "entity.minecraft.llama": "Alpaca",
+    "entity.minecraft.llama_spit": "Alpaca Spit",
+    "entity.minecraft.trader_llama": "Trader Alpaca",
+    "subtitles.entity.llama.ambient": "Alpaca bleats",
+    "subtitles.entity.llama.angry": "Alpaca bleats angrily",
+    "subtitles.entity.llama.chest": "Alpaca Chest equips",
+    "subtitles.entity.llama.death": "Alpaca dies",
+    "subtitles.entity.llama.eat": "Alpaca eats",
+    "subtitles.entity.llama.hurt": "Alpaca hurts",
+    "subtitles.entity.llama.spit": "Alpaca spits",
+    "subtitles.entity.llama.step": "Alpaca steps",
+    "subtitles.entity.llama.swag": "Alpaca is decorated"
+  }
+}

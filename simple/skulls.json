@@ -1,0 +1,22 @@
+{
+  "name": "All Skulls",
+  "code": "skulls",
+  "version": "1.1",
+  "data": {
+    "block.minecraft.skeleton_wall_skull": "Skeleton Wall Skull",
+    "block.minecraft.skeleton_skull": "Skeleton Skull",
+    "block.minecraft.wither_skeleton_wall_skull": "Wither Skeleton Wall Skull",
+    "block.minecraft.wither_skeleton_skull": "Wither Skeleton Skull",
+    "entity.minecraft.wither_skull": "Wither Skull",
+    "block.minecraft.piston_head": "Piston Skull",
+    "block.minecraft.zombie_wall_head": "Zombie Wall Skull",
+    "block.minecraft.zombie_head": "Zombie Skull",
+    "block.minecraft.player_wall_head": "Player Wall Skull",
+    "block.minecraft.player_head": "Player Skull",
+    "block.minecraft.player_head.named": "%s's Skull",
+    "block.minecraft.creeper_wall_head": "Creeper Wall Skull",
+    "block.minecraft.creeper_head": "Creeper Skull",
+    "block.minecraft.dragon_wall_head": "Dragon Wall Skull",
+    "block.minecraft.dragon_head": "Dragon Skull"
+  }
+}

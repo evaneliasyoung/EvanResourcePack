@@ -1,0 +1,14 @@
+{
+  "name": "Carrots to Grapes",
+  "code": "grapes",
+  "version": "1.0",
+  "data": {
+    "block.minecraft.carrots": "Grapes",
+    "item.minecraft.carrot": "Grapes",
+    "item.minecraft.golden_carrot": "Golden Grapes",
+    "item.minecraft.carrot_on_a_stick": "Grapes on a Stick"
+  },
+  "content": [
+    "textures"
+  ]
+}

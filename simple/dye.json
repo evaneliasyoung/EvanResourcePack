@@ -1,0 +1,23 @@
+{
+  "name": "Dyes To Powders",
+  "code": "dye",
+  "version": "1.0",
+  "data": {
+    "item.minecraft.red_dye": "Red Powder",
+    "item.minecraft.green_dye": "Green Powder",
+    "item.minecraft.purple_dye": "Purple Powder",
+    "item.minecraft.cyan_dye": "Cyan Powder",
+    "item.minecraft.light_gray_dye": "Light Grey Powder",
+    "item.minecraft.gray_dye": "Grey Powder",
+    "item.minecraft.pink_dye": "Pink Powder",
+    "item.minecraft.lime_dye": "Lime Powder",
+    "item.minecraft.yellow_dye": "Yellow Powder",
+    "item.minecraft.light_blue_dye": "Light Blue Powder",
+    "item.minecraft.magenta_dye": "Magenta Powder",
+    "item.minecraft.orange_dye": "Orange Powder",
+    "item.minecraft.blue_dye": "Blue Powder",
+    "item.minecraft.black_dye": "Black Powder",
+    "item.minecraft.brown_dye": "Brown Powder",
+    "item.minecraft.white_dye": "White Powder"
+  }
+}

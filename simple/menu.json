@@ -1,0 +1,28 @@
+{
+  "name": "Menu Items",
+  "code": "menu",
+  "version": "1.1",
+  "data": {
+    "demo.help.inventory": "Use the %1$s key to open your backpack",
+    "container.inventory": "Backpack",
+    "itemGroup.inventory": "Survival Backpack",
+    "menu.options": "Settings",
+    "menu.quit": "Exit Game",
+    "menu.returnToMenu": "Save and Quit",
+    "menu.disconnect": "Disconnect",
+    "options.title": "Settings",
+    "options.controls": "Controls",
+    "options.video": "Graphics Settings",
+    "options.languageWarning": "This language is 100%% accurate",
+    "options.videoTitle": "Graphics Settings",
+    "options.fov.max": "Oculus Rift",
+    "options.viewBobbing": "'Drunk' Mode",
+    "options.advancedButton": "Advanced Graphics Settings...",
+    "options.advancedVideoTitle": "Advanced Graphics Settings",
+    "key.categories.inventory": "Backpack",
+    "key.inventory": "Open/Close Backpack",
+    "tutorial.open_inventory.title": "Open your backpack",
+    "tutorial.open_inventory.description": "Press %s",
+    "gamerule.keepInventory": "Keep backpack after death"
+  }
+}

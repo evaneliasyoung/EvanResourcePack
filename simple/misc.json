@@ -1,0 +1,22 @@
+{
+  "name": "Miscellaneous",
+  "code": "misc",
+  "version": "1.0",
+  "data": {
+    "item.minecraft.flint_and_steel": "Flint Latch",
+    "item.minecraft.iron_ingot": "Iron Bar",
+    "item.minecraft.gold_ingot": "Gold Bar",
+    "item.minecraft.porkchop": "Raw Pork",
+    "item.minecraft.cooked_porkchop": "Cooked Pork",
+    "item.minecraft.slime_ball": "Slime",
+    "item.minecraft.clock": "Pocket Watch",
+    "item.minecraft.glowstone_dust": "Glint",
+    "item.minecraft.bone_meal": "Bone Mash",
+    "block.minecraft.flower_pot": "Pot",
+    "block.minecraft.comparator": "Redstone Computer",
+    "block.minecraft.sea_pickle": "Pickle",
+    "block.minecraft.jukebox": "Record Player",
+    "subtitles.item.flintandsteel.use": "Flint Latch click",
+    "subtitles.block.comparator.click": "Computer clicks"
+  }
+}

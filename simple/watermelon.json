@@ -1,0 +1,13 @@
+{
+  "name": "Melons to Watermelons",
+  "code": "watermelon",
+  "version": "1.1",
+  "data": {
+    "block.minecraft.melon": "Watermelon",
+    "block.minecraft.attached_melon_stem": "Attached Watermelon Stem",
+    "block.minecraft.melon_stem": "Watermelon Stem",
+    "item.minecraft.melon_seeds": "Watermelon Seeds",
+    "item.minecraft.melon_slice": "Watermelon Slice",
+    "item.minecraft.glistering_melon_slice": "Glistering Watermelon Slice"
+  }
+}

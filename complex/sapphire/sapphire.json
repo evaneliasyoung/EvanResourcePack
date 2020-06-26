@@ -1,0 +1,16 @@
+{
+  "name": "Emeralds to Sapphires",
+  "code": "sapphire",
+  "version": "1.0",
+  "data": {
+    "block.minecraft.emerald_ore": "Sapphire Ore",
+    "block.minecraft.emerald_block": "Block of Sapphire",
+    "item.minecraft.emerald": "Sapphire"
+  },
+  "content": [
+    "textures"
+  ],
+  "conflicts": [
+    "ruby"
+  ]
+}

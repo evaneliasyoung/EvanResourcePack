@@ -1,0 +1,32 @@
+{
+  "name": "Turtles to Tortles",
+  "code": "tortle",
+  "version": "1.1",
+  "data": {
+    "block.minecraft.turtle_egg": "Tortle Egg",
+    "block.minecraft.two_turtle_eggs": "Two Tortle Eggs",
+    "block.minecraft.three_turtle_eggs": "Three Tortle Eggs",
+    "block.minecraft.four_turtle_eggs": "Four Tortle Eggs",
+    "item.minecraft.turtle_spawn_egg": "Tortle Spawn Egg",
+    "item.minecraft.turtle_helmet": "Tortle Shell",
+    "entity.minecraft.turtle": "Tortle",
+    "item.minecraft.tipped_arrow.effect.turtle_master": "Arrow of the Tortle Master",
+    "item.minecraft.potion.effect.turtle_master": "Potion of the Tortle Master",
+    "item.minecraft.splash_potion.effect.turtle_master": "Splash Potion of the Tortle Master",
+    "item.minecraft.lingering_potion.effect.turtle_master": "Lingering Potion of the Tortle Master",
+    "subtitles.entity.turtle.ambient_land": "Tortle chirps",
+    "subtitles.entity.turtle.lay_egg": "Tortle lays egg",
+    "subtitles.entity.turtle.egg_hatch": "Tortle egg hatches",
+    "subtitles.entity.turtle.egg_crack": "Tortle egg cracks",
+    "subtitles.entity.turtle.egg_break": "Tortle egg breaks",
+    "subtitles.entity.turtle.hurt": "Tortle hurts",
+    "subtitles.entity.turtle.hurt_baby": "Tortle baby hurts",
+    "subtitles.entity.turtle.death": "Tortle dies",
+    "subtitles.entity.turtle.death_baby": "Tortle baby dies",
+    "subtitles.entity.turtle.swim": "Tortle swims",
+    "subtitles.entity.turtle.shamble": "Tortle shambles",
+    "subtitles.entity.turtle.shamble_baby": "Tortle baby shambles",
+    "subtitles.item.armor.equip_turtle": "Tortle shell thunks",
+    "subtitles.entity.zombie.destroy_egg": "Tortle Egg stomped"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Pufferfish to Puff",
+  "code": "puff",
+  "version": "1.1",
+  "data": {
+    "item.minecraft.pufferfish_bucket": "Bucket of Puff",
+    "item.minecraft.pufferfish": "Puff",
+    "item.minecraft.pufferfish_spawn_egg": "Puff Spawn Egg",
+    "entity.minecraft.pufferfish": "Puff",
+    "subtitles.entity.puffer_fish.blow_out": "Puff deflates",
+    "subtitles.entity.puffer_fish.blow_up": "Puff inflates",
+    "subtitles.entity.puffer_fish.death": "Puff dies",
+    "subtitles.entity.puffer_fish.flop": "Puff flops",
+    "subtitles.entity.puffer_fish.hurt": "Puff hurts",
+    "subtitles.entity.puffer_fish.sting": "Puff stings"
+  }
+}
