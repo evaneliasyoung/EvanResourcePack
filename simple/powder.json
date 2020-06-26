@@ -1,6 +1,6 @@
 {
   "name": "Dyes To Powders",
-  "code": "dye",
+  "code": "powder",
   "version": "1.0",
   "data": {
     "item.minecraft.red_dye": "Red Powder",
