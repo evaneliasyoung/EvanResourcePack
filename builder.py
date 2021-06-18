@@ -30,7 +30,7 @@ class ComplexPack(SimplePack):
 
 
 PACK_NAME: str = "Evan's Language"
-PACK_VER: str = '4.1'
+PACK_VER: str = '4.1.1'
 PACK_FORMAT: PackFormat = 7
 SPLASHES: List[str] = ['01000101', 'eey.pw', 'Open Source!']
 PACK_DATA: MCMeta = {
