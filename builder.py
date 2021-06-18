@@ -9,6 +9,7 @@
 @copyright Copyright 2019-2020 Evan Elias Young. All rights reserved.
 """
 
+from mcmeta import MCMeta, PackFormat
 from os.path import join
 import os
 import json
@@ -30,9 +31,9 @@ class ComplexPack(SimplePack):
 
 PACK_NAME: str = "Evan's Language"
 PACK_VER: str = '4.1'
-PACK_FORMAT: int = 5
+PACK_FORMAT: PackFormat = 7
 SPLASHES: List[str] = ['01000101', 'eey.pw', 'Open Source!']
-PACK_DATA: Dict[Any, Any] = {
+PACK_DATA: MCMeta = {
     'pack': {
         'pack_format': PACK_FORMAT,
         'description': f"Evan's Custom Language! V{PACK_VER}"
