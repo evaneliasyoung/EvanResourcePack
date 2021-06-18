@@ -86,16 +86,24 @@ def load_simple() -> Dict[str, SimplePack]:
     return simple_data
 
 
-def build_selected() -> None:
+def build_selected(zipf: ZipFile, selected: PackCollection) -> None:
     """Builds the selected data packs into a file.
+
+    Args:
+        zipf (ZipFile): The zip file of the data pack.
+        selected (PackCollection): The selected packs to combine.
     """
     st: str = 'Selected Packs:\n'
     st += '\n'.join([f'  {p} - {selected[p]["version"]}' for p in selected])
-    zip.writestr('selected.txt', st)
+    zipf.writestr('selected.txt', st)
 
 
-def build_content():
+def build_content(zipf: ZipFile, selected: PackCollection):
     """Builds the selected data packs and their contents into the data pack.
+
+    Args:
+        zipf (ZipFile): The zip file of the data pack.
+        selected (PackCollection): The selected packs to combine.
     """
     comp: Dict[str, ComplexPack] = load_complex()
     rev: Dict[str, ComplexPack] = [s for s in selected if s in comp]
@@ -103,51 +111,58 @@ def build_content():
         for c in comp[p]['content']:
             for root, _, files in os.walk(join('complex', p, c)):
                 for f in files:
-                    zip.write(
+                    zipf.write(
                         join(root, f),
                         join('assets', 'minecraft',
                              SEP.join(root.split(SEP)[2:]), f))
 
 
-def build_base() -> None:
+def build_base(zipf: ZipFile) -> None:
     """Builds the base structure for the data pack.
+
+    Args:
+        zipf (ZipFile): The zip file of the data pack.
     """
-    zip.write(join('assets', 'pack.png'), 'pack.png')
-    zip.writestr('pack.mcmeta', json.dumps(PACK_DATA, indent=4))
-    zip.writestr(join('assets', 'minecraft', 'texts', 'splashes.txt'),
-                 '\n'.join(SPLASHES))
+    zipf.write(join('assets', 'pack.png'), 'pack.png')
+    zipf.writestr('pack.mcmeta', json.dumps(PACK_DATA, indent=4))
+    zipf.writestr(join('assets', 'minecraft', 'texts', 'splashes.txt'),
+                  '\n'.join(SPLASHES))
 
 
-def build_lang():
+def build_lang(zipf: ZipFile, selected: PackCollection) -> None:
     """Builds the language files into the data pack.
+
+    Args:
+        zipf (ZipFile): The zip file of the data pack.
+        selected (PackCollection): The selected packs to combine.
     """
     lang: Dict[str, str] = json.load(open(join('assets', 'base.json')))
     for p in selected:
         lang.update(selected[p]['data'])
-    zip.writestr(join('assets', 'minecraft', 'lang', 'en_ev.json'),
-                 json.dumps(lang, indent=2))
+    zipf.writestr(join('assets', 'minecraft', 'lang', 'en_ev.json'),
+                  json.dumps(lang, indent=2))
 
+if __name__ == '__main__':
+    selected: PackCollection = {}
+    allData: PackCollection = {}
+    allData.update(load_simple())
+    allData.update(load_complex())
 
-selected: PackCollection = {}
-allData: PackCollection = {}
-allData.update(load_simple())
-allData.update(load_complex())
+    for p in allData:
+        ans: str = ''
+        while not (ans == 'Y' or ans == 'N'):
+            print(allData[p]['name'])
+            ans = input('Y/n ').upper()
+        if ans == 'Y':
+            selected[p] = allData[p]
 
-for p in allData:
-    ans: str = ''
-    while not (ans == 'Y' or ans == 'N'):
-        print(allData[p]['name'])
-        ans = input('Y/n ').upper()
-    if ans == 'Y':
-        selected[p] = allData[p]
+    zipbytes: BytesIO = BytesIO()
+    zipf: ZipFile = ZipFile(zipbytes, 'w', ZIP_DEFLATED, False)
 
-zipbytes: BytesIO = BytesIO()
-zip: ZipFile = ZipFile(zipbytes, 'w', ZIP_DEFLATED, False)
+    build_base(zipf)
+    build_selected(zipf, selected)
+    build_lang(zipf, selected)
+    build_content(zipf, selected)
 
-build_base()
-build_selected()
-build_lang()
-build_content()
-
-zip.close()
-open(f'{PACK_NAME}.zip', 'wb').write(zipbytes.getvalue())
+    zipf.close()
+    open(f'{PACK_NAME}.zip', 'wb').write(zipbytes.getvalue())
