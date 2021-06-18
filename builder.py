@@ -19,14 +19,14 @@ from typing import List, Dict, Any, TypedDict, Union
 
 
 class SimplePack(TypedDict):
-    name: str
-    code: str
-    version: str
-    data: Dict[str, str]
+    name: str  # The name for the resource pack addition.
+    code: str  # The internal codename for the addition.
+    version: str  # The interal version of the addition.
+    data: Dict[str, str]  # The underlying language data.
 
 
 class ComplexPack(SimplePack):
-    content: List[str]
+    content: List[str]  # The additional files to include.
 
 
 PACK_NAME: str = "Evan's Language"
