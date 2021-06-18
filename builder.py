@@ -47,6 +47,7 @@ PACK_DATA: MCMeta = {
     }
 }
 SEP: str = os.sep
+PackCollection = Dict[str, Union[SimplePack, ComplexPack]]
 
 
 def load_complex() -> Dict[str, ComplexPack]:
@@ -127,8 +128,8 @@ def build_lang():
                  json.dumps(lang, indent=2))
 
 
-selected: Dict[str, Union[SimplePack, ComplexPack]] = {}
-allData: Dict[str, Union[SimplePack, ComplexPack]] = {}
+selected: PackCollection = {}
+allData: PackCollection = {}
 allData.update(load_simple())
 allData.update(load_complex())
 
